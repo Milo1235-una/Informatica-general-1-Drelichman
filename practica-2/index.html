@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+       <title>Presentacion</title>
+       <style>
+        body{ 
+            transition: background 0.3s, color 0.3s
+        }
+        .dark {
+            background: #222;
+            color: white;
+        }
+       </style>
+    </head>
+    <body>
+        <h1>¿Quién soy? </h1>
+        <p> Me llamo <strong>Milo Bergonzi</strong> y tengo 18 años</p>
+        <h2> ¿Cuáles son mis intereses?</h2>
+        <p> El <strong>cine</strong>, los <strong>juegos</strong>, son algunas de las cosas que me interesan</p>
+        <button onclick="cambiarTema()">Cambiar tema</button>
+        <script>
+            function cambiarTema() {
+                document.body.classList.toggle("dark");
+            }
+        </script>
+    </body>
+</html>
+<!-- Se utilizo la IA para cambiar el fondo de color con el boton (cambiar tema)-->

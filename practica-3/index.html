@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Presentación Mejorada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            transition: background 0.3s, color 0.3s;
+        }
+        .dark {
+            background: #222;
+            color: white;
+        }
+        button {
+            margin: 5px;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+        #extra {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>¿Quién soy?</h1>
+    <p>Me llamo <strong>Milo Bergonzi</strong> y tengo 18 años</p>
+
+    <h2>¿Cuáles son mis intereses?</h2>
+    <p>El <strong>cine</strong> y los <strong>juegos</strong> son algunas de las cosas que me interesan</p>
+
+    <!-- BOTONES ÚTILES -->
+    <button onclick="cambiarTema()">Cambiar tema</button>
+    <button onclick="mostrarInfo()">Mostrar más</button>
+    <button onclick="saludo()">Saludar</button>
+
+    <!-- CONTENIDO OCULTO -->
+    <div id="extra">
+        <p>También me gusta aprender programación y crear páginas web.</p>
+    </div>
+
+<script>
+        function cambiarTema() {
+            document.body.classList.toggle("dark");
+        }
+
+        function mostrarInfo() {
+            const extra = document.getElementById("extra");
+            extra.style.display = (extra.style.display === "none") ? "block" : "none";
+        }
+
+        function saludo() {
+            alert("¡Hola! Bienvenido a mi página 😄");
+        }
+    </script>
+
+</body>
+</html>
